@@ -10,7 +10,13 @@ class Array2D:
             self.__data.append(tmp)
 
     def to_string(self):
-        print(self.__data)
+        for fil in range(self.__rows):
+            print("\t", end="")
+            for col in range(self.__cols):
+                print(self.__data[fil][col], "", end="")
+            print("\t")
+            
+        
 
     def get_num_rows(self):
         return self.__rows
